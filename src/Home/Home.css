@@ -1,5 +1,13 @@
 .banner{
-    background-image: url('https://cdn.fs.teachablecdn.com/fj4uprLoTkOdsDfVY9oE');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/lovepik-star-hotel-entrance-halHD2.jpg?alt=media&token=a8be1254-9a6b-4da9-a844-09c0d127b357');
+    background-position: top center;
+    background-size: cover;
+    padding: 5% 20% 35% 50%;
+}
+
+
+.image{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/habitacio4.jpg?alt=media&token=32930c88-609d-41c5-b8ac-d4104e54a6b0');
     background-position: top center;
     background-size: cover;
     padding: 5% 20% 35% 50%;
