@@ -54,7 +54,21 @@ export function Home (){
                         <img className= "w-90 h-90 w-fluid" src='https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/HABITACION-halHD3.jpg?alt=media&token=72866c58-5da5-4869-a50a-41722762eea4'>
                         </img>
                     </div>
-                    
+                    <br/>
+                    <div className='row'>
+                    <div className='col-12 col-md-8'>
+                        <img className= "w-90 h-90 w-fluid" src='https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/habitacio4.jpg?alt=media&token=32930c88-609d-41c5-b8ac-d4104e54a6b0'>
+                        </img>
+                    </div>
+                    </div>
+                    <div className='col-12 col-md-8'>
+                        <img className= "w-80 h-80 w-fluid" src='https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/HABITACION-halHD2.jpg?alt=media&token=c65e4f46-89b5-4cd2-9dad-f037ab466652'>
+                        </img>
+                    </div>
+                    <div className='col-12 col-md-8'>
+                        <img className= "w-90 h-90 w-fluid" src='https://firebasestorage.googleapis.com/v0/b/frontcomfamangh.appspot.com/o/HABITACION-halHD3.jpg?alt=media&token=72866c58-5da5-4869-a50a-41722762eea4'>
+                        </img>
+                    </div>
                 </div>
             </div>
         </div>
