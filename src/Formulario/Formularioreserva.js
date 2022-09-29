@@ -1,13 +1,16 @@
 import { useState } from "react"
 import { ServicioReserva } from "../services/ServicioReserva.js"
 
+import Swal from 'sweetalert2'
+
 export function Formularioreserva(){
+
     const[entrada,setEntrada]=useState("")
     const[salida,setSalida]=useState("")
     const[ninos,setNinos]=useState("")
     const[adultos,setAdultos]=useState("")
 
-    function EnvioFormulario(evento)
+    function EnvioFormulario(evento){
         evento.preventDefault()
         let data={
                 "idHabitacion":"6321ef745a1931ff38e7c2c3",
@@ -16,16 +19,21 @@ export function Formularioreserva(){
                 "numeroNinos":ninos,
                 "numeroAdultos":adultos
                 }
-                
+        
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'exito en la reserva',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })        
         }
+        
 
-       // console.log(entrada)
-       // console.log(salida)
-         //console.log(adultos)
-        //console.log(ninos)
+      
 
     return(
-
+        
         <>
 
             <div className="row">
@@ -51,7 +59,7 @@ export function Formularioreserva(){
                                     type="Date" 
                                     className="form-control shadow"
                                     onChange={(evento)=>{
-                                        setEntrada(evento.targe.value)
+                                        setEntrada(evento.target.value)
                                     }}
                                     value={entrada}
                                     />
@@ -65,7 +73,7 @@ export function Formularioreserva(){
                                     type="Date" 
                                     className="form-control shadow"
                                     onChange={(evento)=>{
-                                        setSalida(evento.targe.value)
+                                        setSalida(evento.target.value)
                                     }}
                                     value={salida}
                                     />
@@ -81,7 +89,7 @@ export function Formularioreserva(){
                                     <select 
                                         className="form-select"
                                         onChange={(evento)=>{
-                                            setAdulto(evento.targe.value)
+                                            setAdultos(evento.target.value)
                                         }}
                                         value={adultos}
                                         defaultValue="1"
@@ -100,7 +108,7 @@ export function Formularioreserva(){
                                     <select 
                                         className="form-select"
                                         onChange={(evento)=>{
-                                            setNinos(evento.targe.value)
+                                            setNinos(evento.target.value)
                                         }}
                                         value={ninos}
                                         defaultValue="0"
